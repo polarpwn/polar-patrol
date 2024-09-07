@@ -1,5 +1,5 @@
 [build]
-  command = "cd pp-dev && npm run build"  # Change directory to pp-dev and build the app
+  command = "npm run build"  # Change directory to pp-dev and build the app
   publish = "pp-dev/.next"                # Specify the publish directory for the build output
 
 [[plugins]]
