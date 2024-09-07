@@ -1,7 +1,8 @@
 [build]
-  command = "npm run build"  # Change directory to pp-dev and build the app
-  publish = "pp-dev/.next"                # Specify the publish directory for the build output
+  base = "pp-dev"                     # Set the base directory to the subdirectory where your app is located
+  command = "npm run build"           # Run the build command from within the base directory
+  publish = ".next"                   # The publish directory relative to the base directory
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs"       # Optional: Use the Next.js plugin for Netlify for better integration
+  package = "@netlify/plugin-nextjs"  # Optional: Use the Next.js plugin for better integration
 
