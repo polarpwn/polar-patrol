@@ -1,0 +1,7 @@
+[build]
+  command = "cd pp-dev && npm run build"  # Change directory to pp-dev and build the app
+  publish = "pp-dev/.next"                # Specify the publish directory for the build output
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"       # Optional: Use the Next.js plugin for Netlify for better integration
+
